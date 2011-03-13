@@ -4,7 +4,7 @@
 This lilypond file defines Note/Pitch Names for a Raga in Carnatic Music.
 This file can be '\include'd in a lilypond score to notate carnatic music compositions as standard western scores.
 
-Source and Documentation: https://github.com/lilyraga
+Source and Documentation: https://github.com/ananthp/lilyraga
 
 Copyright (c) 2010 ananth
 Licensed under GNU GPL Version 3 or later. <http://www.gnu.org/licenses/>
