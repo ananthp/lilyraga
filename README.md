@@ -22,7 +22,7 @@ With these header files for lilypond, you can score a carnatic composition (in s
 
 ## Quick How-to
 
-* copy the folder _carnatic_ to lilypond's include path (where it keeps language files like arabic.ly, english.ly etc)
+Copy the folder _carnatic_ to lilypond's include path (where it keeps language files like arabic.ly, english.ly etc)
 	
 	
 	\include "carnatic/melam/15_mayamalavagowla.ly"
