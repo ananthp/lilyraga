@@ -2,7 +2,7 @@
 %{
 
 This lilypond file defines Note/Pitch Names for a Raga in Carnatic Music.
-This file can be 'include'd in a lilypond score to notate carnatic music compositions as standard western scores.
+This file can be '\include'd in a lilypond score to notate carnatic music compositions as standard western scores.
 
 Source and Documentation: https://github.com/lilyraga
 
@@ -10,15 +10,37 @@ Copyright (c) 2010 ananth
 Licensed under GNU GPL Version 3 or later. <http://www.gnu.org/licenses/>
 -----------------------------------------
 
-	41. Pavani
-      
-	section 1: All 12 Swara-stanas (Tones)
-		raa rii ruu = Suddha, Chatusruti, Shatsruti Rishabams
-		gaa gii guu = su, sadha, antara Ga
-		etc.
-     	
-	section 2: Swara-stanas belonging to Ragam Pavani
-		sa ri ga ma etc. (Scale Tones)
+	Mela Ragam Number: 41
+	Ragam		 : Pavani
+
+	Two groups of note/pitch names are defined here. (Both can be used simultaneously)
+
+	Swara Stanams in this Ragam. (Scale Tones)
+	------------------------------------------
+
+		sa ri ga ma pa dha ni
+
+	
+	All 12 Swara Stanams
+	---------------------
+
+		saa	(Shadjam. Tonic)
+		raa	(Suddha Rishabam. Minor Second)
+		rii	(Chatusruti Rishabam. Major Second)
+		ruu	(Shatsruti Rishabam. Augmented Second; Major Second and a semitone)
+		gaa	(Suddha Ghandaram. Diminished Third; Lowered minor third)
+		gii	(Sadharana Ghandaram. Minor Third)
+		guu	(Antara Ghandaram. Major Third)
+		maa	(Suddha Madhyamam. Perfect Fourth)
+		mii	(Prati Madhyamam. Augmented Fourth)
+		paa	(Panchamam. Perfect Fifth)
+		dhaa	(Suddha Dhaivatam. Minor Sixth)
+		dhii	(Chatusruti Dhaivatam. Major Sixth)
+		dhuu	(Shatsruti Dhaivatam. Augmented Sixth; Major Sixth and a semitone)
+		naa	(Suddha Nishadham. Diminished Third; Lowered minor third)
+		nii	(Kaisika Nishadham. Minor Third)
+		nuu	(Kakali Nishadham. Major Third)
+	
 
 -----------------------------------------
 
