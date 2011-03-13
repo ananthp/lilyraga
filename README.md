@@ -1,14 +1,25 @@
 lilyraga (Lily Raga)
 ====================
-Lilypond Headers for Carnatic Ragas.
+Lilypond header/language files for Carnatic Ragas.
 
 With these header files for lilypond, you can score a carnatic composition (in some _raga_) in _Sa Ri Ga Ma_ notation (_sargam_) and render them in standard western staff notation.
+	
+	\include "carnatic/melam/15_mayamalavagowla.ly"
+	\relative sa' {
+		sa8 ri ga ma pa dha ni sa | sa ni dha pa ma ga ri sa
+	}
+	
 
+Should produce this: ![https://github.com/ananthp/lilyraga/blob/master/examples/sample-raga.png](https://github.com/ananthp/lilyraga/raw/master/examples/sample-raga.png)
+
+(Of course, you need to add a few more lines to compile the above lilypond code. _examples_ folder has compilable code. Read [Lily Raga Wiki](https://github.com/ananthp/lilyraga/wiki), and Lilypond's documentation.
+
+	
 ## Folder Structure
 
 	+-lilyraga/
 	|	+-README.md
-	|	+-carnatic/
+	|	+-carnatic/			<-- COPY this folder to /your/lilypond/path/ly
 	|	|	+-carnatic.ly	<--	Generic Carnatic pitchnames file. 
 	|	|	+-melam/	<--	Header files for all 72 Mela Ragas
 	|	|	| +-1_kanakangi.ly
@@ -20,21 +31,8 @@ With these header files for lilypond, you can score a carnatic composition (in s
 	|	+scripts		<--	Ruby scripts to generate Lilypond header files for Carnatic Ragams.
 
 
-## Quick How-to
 
 Copy the folder _carnatic_ to lilypond's include path (where it keeps language files like arabic.ly, english.ly etc)
-	
-	
-	\include "carnatic/melam/15_mayamalavagowla.ly"
-	\relative sa' {
-		sa8 ri ga ma pa dha ni sa | sa ni dha pa ma ga ri sa
-	}
-	
-	
-
-Should produce this: ![https://github.com/ananthp/lilyraga/blob/master/examples/sample-raga.png](https://github.com/ananthp/lilyraga/raw/master/examples/sample-raga.png)
-
-(Of course, you need to add a few more lines to compile the above lilypond code. _examples_ folder has compilable code. Read [Lily Raga Wiki](https://github.com/ananthp/lilyraga/wiki), and Lilypond's documentation.
 
 ## Real-world Examples
 
