@@ -25,11 +25,11 @@ With these header files for lilypond, you can score a carnatic composition (in s
 * copy the folder _carnatic_ to lilypond's include path (where it keeps language files like arabic.ly, english.ly etc)
 
 	\include "carnatic/melam/15_mayamalavagowla.ly"
-	
 	\relative sa' {
 		sa8 ri ga ma pa dha ni sa | sa ni dha pa ma ga ri sa
 	}
 	
-![sample raga](examples/sample-raga.png)
+
+![sample raga](https://github.com/ananthp/lilyraga/blob/master/examples/sample-raga.png)
 
 (Of course, you need to add a few more lines to compile the above lilypond code. _examples_ folder has compilable code. Read Lilypond's documentation.)
