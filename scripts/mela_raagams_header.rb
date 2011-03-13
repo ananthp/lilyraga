@@ -67,7 +67,7 @@ Licensed under GNU GPL Version 3 or later. <http://www.gnu.org/licenses/>
 	
 
 -----------------------------------------
-
+Note: sa / saa (Tonic) is coded to note 'c'. Transpose, if desired. 
 
 %}
 
