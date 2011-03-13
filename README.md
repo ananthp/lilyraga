@@ -30,6 +30,8 @@ With these header files for lilypond, you can score a carnatic composition (in s
 	}
 	
 
-![sample raga](https://github.com/ananthp/lilyraga/blob/master/examples/sample-raga.png)
+Should produce this: <https://github.com/ananthp/lilyraga/blob/master/examples/sample-raga.png>
 
-(Of course, you need to add a few more lines to compile the above lilypond code. _examples_ folder has compilable code. Read Lilypond's documentation.)
+(Of course, you need to add a few more lines to compile the above lilypond code. _examples_ folder has compilable code. Read [Lily Raga Wiki](https://github.com/ananthp/lilyraga/wiki), and Lilypond's documentation.
+
+
