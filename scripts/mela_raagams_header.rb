@@ -1,6 +1,7 @@
 # Generates scale headers for 72 mela ragams. 
 # output: lilypond headers for all the scales in separate files.
-# Ragu, Ananth, Ganesh. Sep 10, 2010
+# (c) Ragu, Ananth, Ganesh. Sep 10, 2010
+# Licensed under GNU GPL Version 3 or later. <http://www.gnu.org/licenses/>
 
 require 'erb'
 require 'lily_data'
@@ -23,34 +24,28 @@ end
 mela_ragam_header = ERB.new <<EOF
 
 %{
+
+This lilypond file defines Note/Pitch Names for a Raga in Carnatic Music.
+This file can be '\include'd in a lilypond score to notate carnatic music compositions as standard western scores.
+
+Source and Documentation: https://github.com/lilyraga
+
+Copyright (c) 2010 ananth
+Licensed under GNU GPL Version 3 or later. <http://www.gnu.org/licenses/>
+-----------------------------------------
+
 	<%= idx+1 %>. <%= ragam %>
       
-	section 1: All 12 Swara-stanas
+	section 1: All 12 Swara-stanas (Tones)
 		raa rii ruu = Suddha, Chatusruti, Shatsruti Rishabams
 		gaa gii guu = su, sadha, antara Ga
 		etc.
      	
 	section 2: Swara-stanas belonging to Ragam <%= ragam %>
-		sa ri ga ma etc.
+		sa ri ga ma etc. (Scale Tones)
 
 -----------------------------------------
 
-Copyright (c) 2010 ananth
-http://beautifulnote.com
-https://github.com/lilyraga
-
-This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 %}
 
@@ -72,5 +67,5 @@ ragams = RagaData.mela_ragams
 ragams.each_index do |idx|
 	scale = ragams[idx]
 	ragam = RagaData::RAGA_NAMES_EN[idx]
-	File.open("./melam/#{idx+1}_#{ragam.downcase}.ly", 'w') << mela_ragam_header.result(binding)
+	File.open("../carnatic/melam/#{idx+1}_#{ragam.downcase}.ly", 'w') << mela_ragam_header.result(binding)
 end
