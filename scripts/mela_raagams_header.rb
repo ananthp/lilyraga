@@ -61,9 +61,9 @@ Licensed under GNU GPL Version 3 or later. <http://www.gnu.org/licenses/>
 		dhaa	(Suddha Dhaivatam. Minor Sixth)
 		dhii	(Chatusruti Dhaivatam. Major Sixth)
 		dhuu	(Shatsruti Dhaivatam. Augmented Sixth; Major Sixth and a semitone)
-		naa	(Suddha Nishadham. Diminished Third; Lowered minor third)
-		nii	(Kaisika Nishadham. Minor Third)
-		nuu	(Kakali Nishadham. Major Third)
+		naa	(Suddha Nishadham. Diminished Seventh; Lowered minor Seventh)
+		nii	(Kaisika Nishadham. Minor Seventh)
+		nuu	(Kakali Nishadham. Major Seventh)
 	
 
 -----------------------------------------
