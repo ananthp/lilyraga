@@ -22,8 +22,8 @@ Should produce this: ![https://github.com/ananthp/lilyraga/blob/master/examples/
 	|	+-carnatic/			<-- COPY this folder to /your/lilypond/path/ly
 	|	|	+-carnatic.ly	<--	Generic Carnatic pitchnames file. 
 	|	|	+-melam/	<--	Header files for all 72 Mela Ragas
-	|	|	| +-1_kanakangi.ly
-	|	|	| +-2_ratnangi.ly
+	|	|	| +-01_kanakangi.ly
+	|	|	| +-02_ratnangi.ly
 			...
 			... 
 	|	+-examples		<-- 	Score examples, how-to, 72 Mela Raga Chart. (TODO)
